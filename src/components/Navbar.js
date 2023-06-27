@@ -20,7 +20,7 @@ const Navbar = (props) => {
         <li ><NavLink to="/">HOME</NavLink></li>
         <li ><NavLink to="/about">ABOUT</NavLink></li>
         <li ><NavLink to="/services">SERVICES</NavLink></li>
-        <li ><NavLink to="/hire">HIRE ME</NavLink></li>
+        <li ><NavLink to="/hire">SKILLS</NavLink></li>
         <li ><NavLink to="/contact">CONTACT ME</NavLink></li>
       </ul>
     </div>

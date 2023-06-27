@@ -1,9 +1,9 @@
 import React from 'react'
 import Langdata from "./Langdata"
-const Lang = () => {
+const Lang = (props) => {
  
   return (
-    <div className='lang_page'>
+    <div className='lang_page'  style={{color:props.color , marginTop:props.margin}}>
 
         {Langdata.map((lang)=>{
 

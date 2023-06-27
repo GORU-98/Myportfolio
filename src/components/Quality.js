@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Quality = () => {
+const Quality = (props) => {
   return (
-    <div className='quality'>
+    <div className='quality' style={{color:props.color}}>
 
 
       <div className="q_card1">

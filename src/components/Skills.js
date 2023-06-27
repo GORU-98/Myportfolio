@@ -1,9 +1,13 @@
 import React from 'react'
 import Skilldata from "./Skilldata"
-const Skills = () => {
+
+import {
+  NavLink,
+ } from "react-router-dom"
+const Skills = (props) => {
    
   return (
-    <div className='skills'>
+    <div className='skills'  style={{color:props.color}}>
 
 {
       Skilldata.map((skill)=>{
@@ -14,7 +18,8 @@ return <div className="skill_card" key={skill.id}>
       <div className="skill_desc">
           <h1>{skill.title}</h1>
           <p>{skill.desc}</p>
-          <button>Contact me</button>
+          {/* <button onClick={handleContact}>Contact me</button> */}
+          <NavLink className="Navlink" to="/contact">Contact me</NavLink>
       </div>
   </div>
 })  
