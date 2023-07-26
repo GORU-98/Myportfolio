@@ -33,7 +33,7 @@ const Contact = (props) => {
       const [mess,setMess] = useState({name:"",email:"",number:"",message:"",subject:""});
 
       const sendMessage = async (e)=>{
-        const req = await fetch("http://localhost:9000/contact",{
+        const req = await fetch("https://progoru.onrender.com/contact",{
             method:"POST",
             headers:{"Content-Type":"application/json"},
             body:JSON.stringify(

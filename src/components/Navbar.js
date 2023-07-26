@@ -6,7 +6,6 @@ import {
 } from "react-router-dom"
 const Navbar = (props) => {
   const [menu, setMenu] = useState(false)
-  // const [display,setDisplay] = useState("")
   return (<>
 
 
@@ -16,7 +15,7 @@ const Navbar = (props) => {
         <div className="logo">
             <h2>{props.title}</h2>
         </div>
-      <ul className={!menu?"nav_ul":"nav_tohide"} >
+      <ul className="nav_ul">
         <li ><NavLink to="/">HOME</NavLink></li>
         <li ><NavLink to="/about">ABOUT</NavLink></li>
         <li ><NavLink to="/services">SERVICES</NavLink></li>
@@ -24,7 +23,15 @@ const Navbar = (props) => {
         <li ><NavLink to="/contact">CONTACT ME</NavLink></li>
       </ul>
     </div>
-    <div className="hamburger"><img src="./icons/instagram.png" alt="" onClick={()=>setMenu(!menu)}/></div>
+    <div className="hamburger"><img src="./icons/menu.png" alt="" onClick={()=>setMenu(!menu )} />
+    <ul className="nav_tohide" style={{display:menu ? "flex" : "none"}}>
+        <li ><NavLink to="/" onClick={()=>setMenu(!menu )}>HOME</NavLink></li>
+        <li ><NavLink to="/about" onClick={()=>setMenu(!menu )}>ABOUT</NavLink></li>
+        <li ><NavLink to="/services" onClick={()=>setMenu(!menu )}>SERVICES</NavLink></li>
+        <li ><NavLink to="/hire" onClick={()=>setMenu(!menu )}>SKILLS</NavLink></li>
+        <li ><NavLink to="/contact" onClick={()=>setMenu(!menu )}>CONTACT ME</NavLink></li>
+      </ul>
+    </div>
     </div>
 
       <Outlet/>

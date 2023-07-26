@@ -80,7 +80,12 @@ li{
      width: 75vw;
      top: 74%;
  }
+ .nav_tohide a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
 
+}
 .hamburger img{
     display: inline;
 }
@@ -405,7 +410,7 @@ position: relative;
     margin-top: 2rem;
     max-width: 84vw;
     width: 84vw;
-    height: 82vh;
+    /* height: 82vh; */
     /* max-height: 100vh; */
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -558,7 +563,7 @@ input[type=number]::-webkit-inner-spin-button{
     .contact_page{
         justify-content: flex-start;
         margin-top: 1.5rem;
-height: 92vh;
+height: 78vh;
     }
 
     .contact_title{
@@ -588,7 +593,7 @@ height: 92vh;
 
 .lang_page{
     margin-top: 2rem;
-    height: 100vh;
+    height: 130vh;
     width: 84vw;
     display: grid;
     grid-template-rows: repeat(4,1fr);
@@ -657,13 +662,13 @@ place-items: center;
 /* mode page */
 
 
-.mode , .color{
-    background-color: black;
-    width: 2rem;
-    height: 2rem;
+.mode img , .color{
+    /* background-color: black; */
+    width: 2.5rem;
+    height: 2.5rem;
     position: absolute;
     right: 3%;
-    top: 2.6%;
+    top: 2.3%;
     cursor: pointer;
     display: grid;
     place-items: center;
@@ -706,7 +711,7 @@ place-items: center;
     top: 12%;
     /* display: grid; */
     row-gap: 2rem;
-    background-color: yellowgreen;
+   
 }
 .color>div{
     /* display: grid; */
@@ -845,5 +850,26 @@ place-items: center;
         }
         
     }
-    
+    .mode  img{
+       
+        top: 10%;
+        right: 7.5%;
+    }
+       .color{
+       
+        top: 15% !important;
+        right: 7.5%;
+    }
+}
+
+/* credit page*/
+
+.credit{
+ 
+   width: auto;
+    height: 2rem;
+    text-align: center;
+    font-size: 1.4rem;
+    margin-top: 2rem;
+   
 }

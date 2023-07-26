@@ -126,7 +126,7 @@ const Mode = ({children}) => {
   return (
     <Appcontext.Provider value={{...state}}>
     
-    <div className='mode'  onClick={handleDisplay} ></div>
+    <div className='mode'  ><img src="./icons/filter.png" alt=""  onClick={handleDisplay}/></div>
         
         <div className="color"   style={{display:`${display}`}}>
 

@@ -12,6 +12,7 @@ import {
 } from "react-router-dom";
 import Lang from './components/Lang';
 import {Mode} from './components/Mode'
+import Credit from './components/Credit';
 
 
 function App() {
@@ -48,7 +49,7 @@ function App() {
       </BrowserRouter>
      
 
-
+<Credit/>
 
     </div>
   );
